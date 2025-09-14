@@ -1,0 +1,101 @@
+/* ---------------------------------------------------------------- */
+/* file: pages.css
+/*
+/* info: styles default of all pages of content
+/* ---------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------- */
+/* Header | Content Container
+/* ---------------------------------------------------------------- */
+
+.header-content-container {
+
+  padding: 1em 0 1.5em 0;
+
+  display: grid;
+  justify-items: center;
+  row-gap: 1em;
+
+}
+
+/*  div 1 > span 1 */
+.header-content-container > div:nth-of-type(1) {
+
+  /* 20px, 20px/16px(default=1em) = 1.25em */
+  font-size: 1.25em;
+
+}
+
+/*  div 1 > span 1 */
+.header-content-container > div > span:nth-of-type(1) {
+
+  font-weight: bold;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Main | Content Container
+/* ---------------------------------------------------------------- */
+
+.main-content-container {
+
+  width: 100%;
+
+  display: grid;
+  row-gap: 1.5em;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Main Content Box | Main Content Container
+/* ---------------------------------------------------------------- */
+
+.main-content-box {
+
+  padding: 1em;
+
+  display: grid;
+  row-gap: 1em;
+
+  border-radius: 1em;
+
+  background-color: white;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Header | Main Content Box
+/* ---------------------------------------------------------------- */
+
+.main-header-content-box {
+
+  font-size: 1.125em;
+  font-weight: bold;
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Main | Main Content Box
+/* ---------------------------------------------------------------- */
+
+.main-sub-content-box {
+
+  line-height: 1.5em;
+
+  display: grid;
+  row-gap: 1.5em;
+
+  color:rgb(61, 61, 61);
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Main Sub Topic | Main | Main Content Box
+/* ---------------------------------------------------------------- */
+
+.main-sub-topic {
+
+  /* here you can style ur own main sub topic or many more */
+  /* color:red; */
+}

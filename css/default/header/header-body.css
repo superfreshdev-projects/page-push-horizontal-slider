@@ -1,0 +1,27 @@
+/* ----------------------------------------------------- */
+/* file: header-body.css
+/*
+/* info: styles the header body
+/* ----------------------------------------------------- */
+
+#header-body {
+
+  z-index: 99;
+
+  position: fixed;
+  left:0;
+  right:0;
+
+  /* mobile */
+  height: 10em;
+  width: 100%;
+
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(28,28,28);
+
+}

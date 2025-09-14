@@ -1,0 +1,79 @@
+/* ----------------------------------------------------- */
+/* file: html-body.css
+/*
+/* info: styles the html body layout, the root layout
+/*       of all webpage
+/* ----------------------------------------------------- */
+
+
+/* --------------------------------------------------- */
+/* All HTML Elements get set of border-box
+/* --------------------------------------------------- */
+
+/* reminder:
+  it handles not growing oversize
+  for example if we use in the same layout box
+  width 100% and e.g padding-right 100px, then the 100px
+  belongs inside the box and not outside - without
+  this css set, the default will be an addition
+  of 100% and 100px and that let the layout go oversize*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------- */
+/* HTML, Body
+/* --------------------------------------------------- */
+
+html, body {
+
+  /* delete default margin of browser */
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  /* use the real max view height of page */
+  min-height: 100vh;
+
+  /* layout */
+  display: grid;
+
+  /* header is fixed and dont belong
+     to layout */
+  /* main, footer */
+  grid: 1fr auto / 1fr;
+
+  font-size: 1rem;
+  line-height: 1.5em;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+/* reminder:
+   these 2 extra css sets in each html and body
+   is important to handle the correct
+   scroll size by short or long content */
+
+/* --------------------------------------------------- */
+/* HTML
+/* --------------------------------------------------- */
+
+html {
+
+  /* Scrollbar immer reservieren */
+  overflow-y: scroll;
+
+}
+
+/* --------------------------------------------------- */
+/* Body
+/* --------------------------------------------------- */
+
+body {
+
+  overflow-x: hidden;
+
+}

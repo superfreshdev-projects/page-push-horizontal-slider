@@ -1,0 +1,69 @@
+/* ----------------------------------------------------- */
+/* file: page-push-slider.css
+/*
+/* info: styles the page push slider container
+/* & the page container & single page ids
+/* ----------------------------------------------------- */
+
+
+/* ------------------------------------- */
+/* Page Push Slider
+/* ------------------------------------- */
+
+.page-push-slider {
+
+  position: relative;
+  height: 100%;
+
+  display: grid;
+  /* justify-items: flex-start; */
+  /* grid: 1fr / 1fr; */
+
+  /* overflow-x: hidden; */
+  overflow: hidden;
+
+}
+
+/* ----------------------------------------------------- */
+/* Page Slide ( default unshown )
+/* ----------------------------------------------------- */
+
+.page-slide {
+
+   /* because of fixed header */
+  margin-top: 10em;
+
+  /* war absolute */
+  position: absolute;
+  top: 0;
+
+  /* height: 100%; */
+  width: 100%;
+
+  padding: 1em .8em;
+
+  display: grid;
+  justify-items: center;
+  align-items: flex-start;
+  grid: auto 1fr / 1fr;
+
+  /* default all pages behind the right corner */
+  z-index: 1;
+  transform: translateX(100%);
+
+  /* transition effect */
+  transition: all .4s;
+
+}
+
+/* ----------------------------------------------------- */
+/* Active | Page Slide
+/* ----------------------------------------------------- */
+
+.page-slide.active {
+
+  position: relative;
+  z-index: 2;
+  transform: translateX(0);
+
+}

@@ -1,0 +1,77 @@
+/* ----------------------------------------------------- */
+/* file: nav-header-body.css
+/*
+/* info: styles the nav header body
+/* ----------------------------------------------------- */
+
+
+/* ------------------------------------------------- */
+/* Nav Header Body
+/* ------------------------------------------------- */
+
+#nav-header-body {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  column-gap: .8em;
+  row-gap: .8em;
+
+  /* background-color: red; */
+
+}
+
+/* ------------------------------------------------- */
+/* Label | Nav Header Body
+/* ------------------------------------------------- */
+
+.label-nav-header-body {
+
+  height: 2.3em;
+  padding: 0 .8em;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: .6em;
+
+  font-weight: bold;
+
+  background-color: rgb(203, 203, 203);
+
+  user-select: none;
+
+  cursor: pointer;
+  transition: all .4s;
+
+}
+
+.label-nav-header-body:hover {
+
+  background-color: wheat;
+
+}
+
+/* ------------------------------------------------- */
+/* Handling | Styling
+/* ------------------------------------------------- */
+
+/* default unshown radios */
+input[name="name-radio-page"] {
+  display: none;
+}
+
+/* ------------------------------------------- */
+/* Set Background
+/* ------------------------------------------- */
+
+#radio-page-1:checked ~ #nav-header-body label[for="radio-page-1"],
+#radio-page-2:checked ~ #nav-header-body label[for="radio-page-2"],
+#radio-page-3:checked ~ #nav-header-body label[for="radio-page-3"],
+#radio-page-4:checked ~ #nav-header-body label[for="radio-page-4"] {
+
+  background-color: wheat;
+
+}

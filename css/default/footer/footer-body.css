@@ -1,0 +1,52 @@
+/* ----------------------------------------------------- */
+/* file: footer-body.css
+/*
+/* info: styles the footer body
+/* ----------------------------------------------------- */
+
+
+/* ----------------------------------------------------- */
+/* Footer Body
+/* ----------------------------------------------------- */
+
+#footer-body {
+
+
+  /* solution for fixed footer
+     but than we get smaller content view */
+
+  /* z-index: 99;
+  position: fixed;
+  bottom: 0;
+  right:0;
+  left:0;
+  height: 10em;
+  padding: 0em .8em; */
+
+  padding: 2em .8em;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  column-gap: 2em;
+  row-gap: 1.5em;
+
+  background-color: rgba(28,28,28, 1);
+  color:rgb(211, 211, 211);
+
+}
+
+/* ----------------------------------------------------- */
+/* Footer Body Link Box
+/* ----------------------------------------------------- */
+
+.footer-body-link-box {
+
+  padding: .8em;
+
+  border-radius: .8em;
+  border: 1px solid grey;
+
+}
